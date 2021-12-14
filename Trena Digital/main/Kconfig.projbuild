@@ -1,0 +1,32 @@
+menu "Example Configuration"
+
+    config BLINK_GPIO
+        int "Blink GPIO number"
+        range 0 34
+        default 5
+        help
+            GPIO number (IOxx) to blink on and off.
+
+            Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+
+            GPIOs 35-39 are input-only so cannot be used as outputs.
+
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "ssid"
+        help
+            Nome da rede WiFi.
+    
+    config ESP_WIFI_PASSWORD
+        string "Senha do WiFi"
+        default "Minha Senha"
+        help
+            Senha do WiFi (WPA or WPA2).
+    
+    config ESP_MAXIMUM_RETRY
+        string "Número máximo de tentativas de conexão"
+        default 5
+        help
+            Cofigure o valor máximo de tentativas de conexão.
+
+endmenu

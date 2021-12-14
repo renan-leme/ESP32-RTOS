@@ -1,0 +1,11 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "files.associations": {
+    "string.h": "c",
+    "iterator": "c",
+    "ssd1306.h": "c",
+    "fonts.h": "c",
+    "esp_event_loop.h": "c",
+    "nvs_flash.h": "c"
+  }
+}
